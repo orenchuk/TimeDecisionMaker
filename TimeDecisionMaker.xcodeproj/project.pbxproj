@@ -19,6 +19,16 @@
 		748F59CB22706C6600B88B7D /* A.ics in Resources */ = {isa = PBXBuildFile; fileRef = 748F59C922706C6600B88B7D /* A.ics */; };
 		748F59CE22706EB300B88B7D /* B.ics in Resources */ = {isa = PBXBuildFile; fileRef = 748F59CD22706EB300B88B7D /* B.ics */; };
 		748F59CF22706EB300B88B7D /* B.ics in Resources */ = {isa = PBXBuildFile; fileRef = 748F59CD22706EB300B88B7D /* B.ics */; };
+		C1665E0122A3F269009E27C7 /* ICSFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1665E0022A3F269009E27C7 /* ICSFileManager.swift */; };
+		C1CC57E022A3F3A7004E6592 /* ICSFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1665E0022A3F269009E27C7 /* ICSFileManager.swift */; };
+		C1CC57E322A3F4D6004E6592 /* ICSFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E222A3F4D6004E6592 /* ICSFileParser.swift */; };
+		C1CC57E422A3F4D8004E6592 /* ICSFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E222A3F4D6004E6592 /* ICSFileParser.swift */; };
+		C1CC57E722A3F820004E6592 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E622A3F820004E6592 /* String+Extension.swift */; };
+		C1CC57EA22A400C1004E6592 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E922A400C1004E6592 /* Event.swift */; };
+		C1CC57EE22A422E0004E6592 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57ED22A422E0004E6592 /* Calendar.swift */; };
+		C1CC57EF22A429DA004E6592 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E922A400C1004E6592 /* Event.swift */; };
+		C1CC57F022A429DE004E6592 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57ED22A422E0004E6592 /* Calendar.swift */; };
+		C1CC57F122A42D29004E6592 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E622A3F820004E6592 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +55,11 @@
 		748F59C62270687C00B88B7D /* RDTimeDecisionMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDTimeDecisionMaker.swift; sourceTree = "<group>"; };
 		748F59C922706C6600B88B7D /* A.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = A.ics; sourceTree = "<group>"; };
 		748F59CD22706EB300B88B7D /* B.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = B.ics; sourceTree = "<group>"; };
+		C1665E0022A3F269009E27C7 /* ICSFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICSFileManager.swift; sourceTree = "<group>"; };
+		C1CC57E222A3F4D6004E6592 /* ICSFileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICSFileParser.swift; sourceTree = "<group>"; };
+		C1CC57E622A3F820004E6592 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C1CC57E922A400C1004E6592 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		C1CC57ED22A422E0004E6592 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +101,12 @@
 		748F59A22270681B00B88B7D /* TimeDecisionMaker */ = {
 			isa = PBXGroup;
 			children = (
+				C1CC57E822A400AC004E6592 /* Models */,
+				C1CC57E522A3F802004E6592 /* Extensions */,
 				748F59CC22706E9400B88B7D /* Appointments */,
 				748F59A32270681B00B88B7D /* AppDelegate.swift */,
 				748F59C62270687C00B88B7D /* RDTimeDecisionMaker.swift */,
+				C1CC57E122A3F484004E6592 /* ICS */,
 				748F59C42270685A00B88B7D /* ViewControllers */,
 				748F59C32270684E00B88B7D /* Storyboards */,
 				748F59C52270686400B88B7D /* Resources */,
@@ -138,6 +156,32 @@
 				748F59CD22706EB300B88B7D /* B.ics */,
 			);
 			path = Appointments;
+			sourceTree = "<group>";
+		};
+		C1CC57E122A3F484004E6592 /* ICS */ = {
+			isa = PBXGroup;
+			children = (
+				C1665E0022A3F269009E27C7 /* ICSFileManager.swift */,
+				C1CC57E222A3F4D6004E6592 /* ICSFileParser.swift */,
+			);
+			path = ICS;
+			sourceTree = "<group>";
+		};
+		C1CC57E522A3F802004E6592 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC57E622A3F820004E6592 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C1CC57E822A400AC004E6592 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC57E922A400C1004E6592 /* Event.swift */,
+				C1CC57ED22A422E0004E6592 /* Calendar.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,9 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CC57EE22A422E0004E6592 /* Calendar.swift in Sources */,
 				748F59C72270687C00B88B7D /* RDTimeDecisionMaker.swift in Sources */,
 				748F59A62270681B00B88B7D /* ViewController.swift in Sources */,
 				748F59A42270681B00B88B7D /* AppDelegate.swift in Sources */,
+				C1CC57E322A3F4D6004E6592 /* ICSFileParser.swift in Sources */,
+				C1CC57E722A3F820004E6592 /* String+Extension.swift in Sources */,
+				C1CC57EA22A400C1004E6592 /* Event.swift in Sources */,
+				C1665E0122A3F269009E27C7 /* ICSFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				748F59B92270681D00B88B7D /* TimeDecisionMakerTests.swift in Sources */,
+				C1CC57F122A42D29004E6592 /* String+Extension.swift in Sources */,
+				C1CC57F022A429DE004E6592 /* Calendar.swift in Sources */,
+				C1CC57E022A3F3A7004E6592 /* ICSFileManager.swift in Sources */,
+				C1CC57E422A3F4D8004E6592 /* ICSFileParser.swift in Sources */,
 				748F59C82270687C00B88B7D /* RDTimeDecisionMaker.swift in Sources */,
+				C1CC57EF22A429DA004E6592 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,15 +464,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 648A3N24L8;
 				INFOPLIST_FILE = TimeDecisionMaker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rd.test.TimeDecisionMaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rd.test.TimeDecisionMaker.orenchuk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -427,15 +482,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 648A3N24L8;
 				INFOPLIST_FILE = TimeDecisionMaker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rd.test.TimeDecisionMaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rd.test.TimeDecisionMaker.orenchuk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

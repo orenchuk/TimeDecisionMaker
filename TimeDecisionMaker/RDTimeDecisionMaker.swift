@@ -18,6 +18,13 @@ class RDTimeDecisionMaker: NSObject {
     func suggestAppointments(organizerICS:String,
                              attendeeICS:String,
                              duration:TimeInterval) -> [DateInterval] {
+        
+        let organizerCalendar = Calendar(from: organizerICS)
+        let attendeeCalendar = Calendar(from: attendeeICS)
+        
+        debugPrint(organizerCalendar)
+        debugPrint(attendeeCalendar)
+
         return []
     }
 }
