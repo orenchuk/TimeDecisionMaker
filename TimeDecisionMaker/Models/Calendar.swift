@@ -1,5 +1,5 @@
 //
-//  Calendar.swift
+//  ICSCalendar.swift
 //  TimeDecisionMaker
 //
 //  Created by Yevhenii Orenchuk on 6/2/19.
@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Calendar {
+struct ICSCalendar {
     var prodid: String?
     var version: String?
     var scale: String?
     var method: String?
     var name: String?
     var timezone: String?
-    var events: [Event]?
+    var appointments: [Appointment]?
     
     enum Keys: String {
         case prodid = "PRODID"
@@ -27,12 +27,24 @@ struct Calendar {
 
 }
 
-extension Calendar {
+extension ICSCalendar {
     init(from path: String) {
         if let values = ICSFileManager.shared.read(from: path) {
-            self = ICSFileParser.shared.parse(values: values)
+            var calendar = ICSFileParser.shared.parse(values: values)
+            calendar.sortAppointments()
+            
+            self = calendar
         } else {
             self.init()
         }
+    }
+    
+    private mutating func sortAppointments() {
+        self.appointments?.sort(by: {
+            if let first = $0.start, let second = $1.start {
+                return first.compare(second) == .orderedAscending ? true : false
+            }
+            fatalError()
+        })
     }
 }

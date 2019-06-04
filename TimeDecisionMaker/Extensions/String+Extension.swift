@@ -27,4 +27,12 @@ extension String {
         
         return dateFormatter.date(from: self)
     }
+    
+    func toDay() -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyyMMdd"
+        let date = dateFormatter.date(from: self)
+        
+        return date
+    }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Event {
+struct Appointment {
     var start: Date?
     var end: Date?
     var stamp: Date?
@@ -20,10 +20,13 @@ struct Event {
     var status: String?
     var summary: String?
     var transp: String?
+    var isAllDay = false
     
     enum Keys: String {
         case start = "DTSTART"
+        case startDay = "DTSTART;VALUE=DATE"
         case end = "DTEND"
+        case endDay = "DTEND;VALUE=DATE"
         case stamp = "DTSTAMP"
         case uid = "UID"
         case created = "CREATED"

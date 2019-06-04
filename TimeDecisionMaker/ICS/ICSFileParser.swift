@@ -15,30 +15,35 @@ final class ICSFileParser {
     
     // MARK: - Public methods
     
-    func parse(values: [String]) -> Calendar {
+    func parse(values: [String]) -> ICSCalendar {
         
-        var calendar = Calendar()
-        var currentEvent = Event()
+        var calendar = ICSCalendar()
+        var currentEvent = Appointment()
         
         for line in values {
             switch line {
             case "BEGIN:VCALENDAR":
-                calendar.events = [Event]()
+                calendar.appointments = [Appointment]()
             case "BEGIN:VEVENT":
-                currentEvent = Event()
+                currentEvent = Appointment()
             case "END:VEVENT":
-                calendar.events?.append(currentEvent)
+                calendar.appointments?.append(currentEvent)
             case "END:VCALENDAR":
                 return calendar
             default:
                 guard let (key, value) = line.toKeyValuePair(separator: ":") else { break }
                 
-                if let eventKey = Event.Keys(rawValue: key) {
+                if let eventKey = Appointment.Keys(rawValue: key) {
                     switch eventKey {
                     case .start:
                         currentEvent.start = value.toDate()
+                    case .startDay:
+                        currentEvent.start = value.toDay()
+                        currentEvent.isAllDay = true
                     case .end:
                         currentEvent.end = value.toDate()
+                    case .endDay:
+                        currentEvent.end = value.toDay()
                     case .stamp:
                         currentEvent.stamp = value.toDate()
                     case .uid:
@@ -60,7 +65,7 @@ final class ICSFileParser {
                     case .transp:
                         currentEvent.transp = value
                     }
-                } else if let calendarKey = Calendar.Keys(rawValue: key) {
+                } else if let calendarKey = ICSCalendar.Keys(rawValue: key) {
                     switch calendarKey {
                     case .prodid:
                         calendar.prodid = value
