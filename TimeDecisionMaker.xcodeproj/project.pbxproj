@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		748F59A42270681B00B88B7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F59A32270681B00B88B7D /* AppDelegate.swift */; };
-		748F59A62270681B00B88B7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F59A52270681B00B88B7D /* ViewController.swift */; };
 		748F59A92270681B00B88B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F59A72270681B00B88B7D /* Main.storyboard */; };
 		748F59AB2270681D00B88B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748F59AA2270681D00B88B7D /* Assets.xcassets */; };
 		748F59AE2270681D00B88B7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F59AC2270681D00B88B7D /* LaunchScreen.storyboard */; };
@@ -19,6 +18,30 @@
 		748F59CB22706C6600B88B7D /* A.ics in Resources */ = {isa = PBXBuildFile; fileRef = 748F59C922706C6600B88B7D /* A.ics */; };
 		748F59CE22706EB300B88B7D /* B.ics in Resources */ = {isa = PBXBuildFile; fileRef = 748F59CD22706EB300B88B7D /* B.ics */; };
 		748F59CF22706EB300B88B7D /* B.ics in Resources */ = {isa = PBXBuildFile; fileRef = 748F59CD22706EB300B88B7D /* B.ics */; };
+		C1665E0122A3F269009E27C7 /* ICSFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1665E0022A3F269009E27C7 /* ICSFileManager.swift */; };
+		C1AA45E122A7B64C00AE61F1 /* AppointmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA45E022A7B64C00AE61F1 /* AppointmentsVC.swift */; };
+		C1AA45E622A7BB0900AE61F1 /* AppointmentIntervalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA45E422A7BB0900AE61F1 /* AppointmentIntervalCell.swift */; };
+		C1AA45E722A7BB0900AE61F1 /* AppointmentIntervalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA45E422A7BB0900AE61F1 /* AppointmentIntervalCell.swift */; };
+		C1AA45E822A7BB0900AE61F1 /* AppointmentIntervalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1AA45E522A7BB0900AE61F1 /* AppointmentIntervalCell.xib */; };
+		C1AA45E922A7BB0900AE61F1 /* AppointmentIntervalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1AA45E522A7BB0900AE61F1 /* AppointmentIntervalCell.xib */; };
+		C1AA45EA22A7BB0F00AE61F1 /* AppointmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA45E022A7B64C00AE61F1 /* AppointmentsVC.swift */; };
+		C1AA45EC22A7BF6000AE61F1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA45EB22A7BF6000AE61F1 /* UIView+Extension.swift */; };
+		C1AA45ED22A7BF6000AE61F1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA45EB22A7BF6000AE61F1 /* UIView+Extension.swift */; };
+		C1AA45EF22A7C09800AE61F1 /* AppointmetnsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA45EE22A7C09800AE61F1 /* AppointmetnsViewModel.swift */; };
+		C1AA45F022A7C09800AE61F1 /* AppointmetnsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA45EE22A7C09800AE61F1 /* AppointmetnsViewModel.swift */; };
+		C1CC57E022A3F3A7004E6592 /* ICSFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1665E0022A3F269009E27C7 /* ICSFileManager.swift */; };
+		C1CC57E322A3F4D6004E6592 /* ICSFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E222A3F4D6004E6592 /* ICSFileParser.swift */; };
+		C1CC57E422A3F4D8004E6592 /* ICSFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E222A3F4D6004E6592 /* ICSFileParser.swift */; };
+		C1CC57E722A3F820004E6592 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E622A3F820004E6592 /* String+Extension.swift */; };
+		C1CC57EA22A400C1004E6592 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E922A400C1004E6592 /* Appointment.swift */; };
+		C1CC57EE22A422E0004E6592 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57ED22A422E0004E6592 /* Calendar.swift */; };
+		C1CC57EF22A429DA004E6592 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E922A400C1004E6592 /* Appointment.swift */; };
+		C1CC57F022A429DE004E6592 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57ED22A422E0004E6592 /* Calendar.swift */; };
+		C1CC57F122A42D29004E6592 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC57E622A3F820004E6592 /* String+Extension.swift */; };
+		C1D3DC8B22A6C07E00BDE3A3 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D3DC8A22A6C07E00BDE3A3 /* Date+Extension.swift */; };
+		C1D3DC8C22A6C15C00BDE3A3 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D3DC8A22A6C07E00BDE3A3 /* Date+Extension.swift */; };
+		C1D9915722A7F26D009764AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D9915622A7F26D009764AB /* Constants.swift */; };
+		C1D9915822A7F271009764AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D9915622A7F26D009764AB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +57,6 @@
 /* Begin PBXFileReference section */
 		748F59A02270681B00B88B7D /* TimeDecisionMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeDecisionMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748F59A32270681B00B88B7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		748F59A52270681B00B88B7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		748F59A82270681B00B88B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		748F59AA2270681D00B88B7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		748F59AD2270681D00B88B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +67,18 @@
 		748F59C62270687C00B88B7D /* RDTimeDecisionMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDTimeDecisionMaker.swift; sourceTree = "<group>"; };
 		748F59C922706C6600B88B7D /* A.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = A.ics; sourceTree = "<group>"; };
 		748F59CD22706EB300B88B7D /* B.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = B.ics; sourceTree = "<group>"; };
+		C1665E0022A3F269009E27C7 /* ICSFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICSFileManager.swift; sourceTree = "<group>"; };
+		C1AA45E022A7B64C00AE61F1 /* AppointmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsVC.swift; sourceTree = "<group>"; };
+		C1AA45E422A7BB0900AE61F1 /* AppointmentIntervalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentIntervalCell.swift; sourceTree = "<group>"; };
+		C1AA45E522A7BB0900AE61F1 /* AppointmentIntervalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentIntervalCell.xib; sourceTree = "<group>"; };
+		C1AA45EB22A7BF6000AE61F1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		C1AA45EE22A7C09800AE61F1 /* AppointmetnsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmetnsViewModel.swift; sourceTree = "<group>"; };
+		C1CC57E222A3F4D6004E6592 /* ICSFileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICSFileParser.swift; sourceTree = "<group>"; };
+		C1CC57E622A3F820004E6592 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C1CC57E922A400C1004E6592 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		C1CC57ED22A422E0004E6592 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		C1D3DC8A22A6C07E00BDE3A3 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		C1D9915622A7F26D009764AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +120,17 @@
 		748F59A22270681B00B88B7D /* TimeDecisionMaker */ = {
 			isa = PBXGroup;
 			children = (
+				C1CC57E822A400AC004E6592 /* Models */,
+				C1CC57E522A3F802004E6592 /* Extensions */,
 				748F59CC22706E9400B88B7D /* Appointments */,
 				748F59A32270681B00B88B7D /* AppDelegate.swift */,
 				748F59C62270687C00B88B7D /* RDTimeDecisionMaker.swift */,
+				C1CC57E122A3F484004E6592 /* ICS */,
+				C1AA45E222A7BA8700AE61F1 /* Scenes */,
 				748F59C42270685A00B88B7D /* ViewControllers */,
 				748F59C32270684E00B88B7D /* Storyboards */,
 				748F59C52270686400B88B7D /* Resources */,
+				C1D9915622A7F26D009764AB /* Constants.swift */,
 			);
 			path = TimeDecisionMaker;
 			sourceTree = "<group>";
@@ -117,7 +156,8 @@
 		748F59C42270685A00B88B7D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				748F59A52270681B00B88B7D /* ViewController.swift */,
+				C1AA45E022A7B64C00AE61F1 /* AppointmentsVC.swift */,
+				C1AA45EE22A7C09800AE61F1 /* AppointmetnsViewModel.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -138,6 +178,51 @@
 				748F59CD22706EB300B88B7D /* B.ics */,
 			);
 			path = Appointments;
+			sourceTree = "<group>";
+		};
+		C1AA45E222A7BA8700AE61F1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA45E322A7BACC00AE61F1 /* Cells */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C1AA45E322A7BACC00AE61F1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA45E422A7BB0900AE61F1 /* AppointmentIntervalCell.swift */,
+				C1AA45E522A7BB0900AE61F1 /* AppointmentIntervalCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C1CC57E122A3F484004E6592 /* ICS */ = {
+			isa = PBXGroup;
+			children = (
+				C1665E0022A3F269009E27C7 /* ICSFileManager.swift */,
+				C1CC57E222A3F4D6004E6592 /* ICSFileParser.swift */,
+			);
+			path = ICS;
+			sourceTree = "<group>";
+		};
+		C1CC57E522A3F802004E6592 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC57E622A3F820004E6592 /* String+Extension.swift */,
+				C1D3DC8A22A6C07E00BDE3A3 /* Date+Extension.swift */,
+				C1AA45EB22A7BF6000AE61F1 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C1CC57E822A400AC004E6592 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC57E922A400C1004E6592 /* Appointment.swift */,
+				C1CC57ED22A422E0004E6592 /* Calendar.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +307,7 @@
 			files = (
 				748F59AE2270681D00B88B7D /* LaunchScreen.storyboard in Resources */,
 				748F59CE22706EB300B88B7D /* B.ics in Resources */,
+				C1AA45E822A7BB0900AE61F1 /* AppointmentIntervalCell.xib in Resources */,
 				748F59AB2270681D00B88B7D /* Assets.xcassets in Resources */,
 				748F59A92270681B00B88B7D /* Main.storyboard in Resources */,
 				748F59CA22706C6600B88B7D /* A.ics in Resources */,
@@ -234,6 +320,7 @@
 			files = (
 				748F59CF22706EB300B88B7D /* B.ics in Resources */,
 				748F59CB22706C6600B88B7D /* A.ics in Resources */,
+				C1AA45E922A7BB0900AE61F1 /* AppointmentIntervalCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,9 +331,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1AA45EF22A7C09800AE61F1 /* AppointmetnsViewModel.swift in Sources */,
+				C1AA45EC22A7BF6000AE61F1 /* UIView+Extension.swift in Sources */,
+				C1AA45E622A7BB0900AE61F1 /* AppointmentIntervalCell.swift in Sources */,
+				C1D3DC8B22A6C07E00BDE3A3 /* Date+Extension.swift in Sources */,
+				C1CC57EE22A422E0004E6592 /* Calendar.swift in Sources */,
+				C1AA45E122A7B64C00AE61F1 /* AppointmentsVC.swift in Sources */,
 				748F59C72270687C00B88B7D /* RDTimeDecisionMaker.swift in Sources */,
-				748F59A62270681B00B88B7D /* ViewController.swift in Sources */,
+				C1D9915722A7F26D009764AB /* Constants.swift in Sources */,
 				748F59A42270681B00B88B7D /* AppDelegate.swift in Sources */,
+				C1CC57E322A3F4D6004E6592 /* ICSFileParser.swift in Sources */,
+				C1CC57E722A3F820004E6592 /* String+Extension.swift in Sources */,
+				C1CC57EA22A400C1004E6592 /* Appointment.swift in Sources */,
+				C1665E0122A3F269009E27C7 /* ICSFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +351,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1AA45F022A7C09800AE61F1 /* AppointmetnsViewModel.swift in Sources */,
+				C1AA45ED22A7BF6000AE61F1 /* UIView+Extension.swift in Sources */,
 				748F59B92270681D00B88B7D /* TimeDecisionMakerTests.swift in Sources */,
+				C1AA45E722A7BB0900AE61F1 /* AppointmentIntervalCell.swift in Sources */,
+				C1AA45EA22A7BB0F00AE61F1 /* AppointmentsVC.swift in Sources */,
+				C1CC57F122A42D29004E6592 /* String+Extension.swift in Sources */,
+				C1CC57F022A429DE004E6592 /* Calendar.swift in Sources */,
+				C1D9915822A7F271009764AB /* Constants.swift in Sources */,
+				C1CC57E022A3F3A7004E6592 /* ICSFileManager.swift in Sources */,
+				C1CC57E422A3F4D8004E6592 /* ICSFileParser.swift in Sources */,
+				C1D3DC8C22A6C15C00BDE3A3 /* Date+Extension.swift in Sources */,
 				748F59C82270687C00B88B7D /* RDTimeDecisionMaker.swift in Sources */,
+				C1CC57EF22A429DA004E6592 /* Appointment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,15 +518,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 648A3N24L8;
 				INFOPLIST_FILE = TimeDecisionMaker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rd.test.TimeDecisionMaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rd.test.TimeDecisionMaker.orenchuk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -427,15 +536,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 648A3N24L8;
 				INFOPLIST_FILE = TimeDecisionMaker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rd.test.TimeDecisionMaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rd.test.TimeDecisionMaker.orenchuk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
