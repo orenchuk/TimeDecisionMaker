@@ -10,31 +10,74 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--AppointmentsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TimeDecisionMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AppointmentsVC" customModule="TimeDecisionMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDh-8f-EJa">
-                                <rect key="frame" x="166.66666666666666" y="400.66666666666669" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRB-NS-aXY">
+                                <rect key="frame" x="10" y="44" width="355" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQU-10-X0T">
+                                        <rect key="frame" x="158.66666666666666" y="13" width="37.666666666666657" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.16862745100000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="KQU-10-X0T" firstAttribute="centerX" secondItem="XRB-NS-aXY" secondAttribute="centerX" id="FyO-6E-sQG"/>
+                                    <constraint firstItem="KQU-10-X0T" firstAttribute="centerY" secondItem="XRB-NS-aXY" secondAttribute="centerY" id="Gzk-2C-vEq"/>
+                                    <constraint firstAttribute="height" constant="50" id="tAK-BN-bId"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x56-G1-YWs">
+                                <rect key="frame" x="5" y="94" width="365" height="554"/>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.16862745100000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="10" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfe-Yl-aU9">
+                                <rect key="frame" x="10" y="648" width="355" height="125"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="Pq7-WQ-RPO"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="567990000.53546906">
+                                    <!--2018-12-31 23:00:00 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="timePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="6DP-3M-XxZ"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iDh-8f-EJa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1hI-gP-NzY"/>
-                            <constraint firstItem="iDh-8f-EJa" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="VwY-0A-mQm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sfe-Yl-aU9" secondAttribute="bottom" constant="5" id="OZ9-B3-q0B"/>
+                            <constraint firstItem="XRB-NS-aXY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="QMV-Gc-tmi"/>
+                            <constraint firstItem="x56-G1-YWs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="VOb-j9-2MZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sfe-Yl-aU9" secondAttribute="trailing" constant="10" id="Wmu-Z9-IXx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x56-G1-YWs" secondAttribute="trailing" constant="5" id="cNB-L6-iXr"/>
+                            <constraint firstItem="sfe-Yl-aU9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="fCT-zh-eEz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XRB-NS-aXY" secondAttribute="trailing" constant="10" id="gvx-DA-fuP"/>
+                            <constraint firstItem="x56-G1-YWs" firstAttribute="top" secondItem="XRB-NS-aXY" secondAttribute="bottom" id="lVP-Q3-Prp"/>
+                            <constraint firstItem="XRB-NS-aXY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rld-08-pxa"/>
+                            <constraint firstItem="sfe-Yl-aU9" firstAttribute="top" secondItem="x56-G1-YWs" secondAttribute="bottom" id="yWU-x3-7iV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="XRB-NS-aXY" id="XJy-8M-8Db"/>
+                        <outlet property="tableView" destination="x56-G1-YWs" id="iZP-2j-VAn"/>
+                        <outlet property="timePicker" destination="sfe-Yl-aU9" id="7Ax-je-iAx"/>
+                        <outlet property="titleLabel" destination="KQU-10-X0T" id="QYE-n9-dkB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="51.724137931034484"/>
         </scene>
     </scenes>
 </document>
